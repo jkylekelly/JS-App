@@ -731,6 +731,8 @@ async function createOrders () {
   const script = new VMScript(createOrders);
   try {
     const result = vm.run(script);
+    const result = vm.run(script);
+
     console.log("Result from VM:", result);
   } catch (error) {
     console.error("Error in VM:", error);
